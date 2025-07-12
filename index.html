@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYBER GAURD </title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+    }
+
+    .header-banner {
+      background-image:url(Hero-bg.png);
+      background-size:cover;
+      background-position: center;
+      color: #111;
+      padding: 40px 20px;
+    }
+      
+    
+    
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4f46e5;
+    }
+    .logo-img{
+        width: 150px;
+        height: 150px;
+    }
+    .player{
+        font-size: larger;
+        color: #4f46e5;
+        font-weight: bolder;
+        text-align: center;
+
+    }
+
+    .signup-btn {
+      background-color: #4f46e5;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .banner {
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 80px;
+    }
+
+    .banner h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .focus-btn {
+      background-color: #6366f1;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* Optional: Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .signup-btn {
+        margin-top: 10px;
+      }
+    }
+    
+.action-section {
+    background-color: #f0f2f5; 
+    padding: 100px 0; 
+    color: #333; 
+}
+
+.action-section .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    
+    display: flex;
+    align-items: center; 
+    gap: 40px; 
+}
+
+.action-text {
+    flex: 2; 
+}
+
+.action-image {
+    flex: 1; 
+    text-align: left;
+}
+
+.action-text h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.action-text p {
+    font-size: 30px;
+    color: #06d121; 
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.launch-btn {
+    background-color: #290ce8;
+    color: #ffffff;
+    padding:20px 20px;
+    border-radius: 10px;
+    text-decoration: darkgoldenrod;
+    font-weight: bold;
+    display: inline-block; 
+}
+.inbox{
+    background-color: #06d121;
+}
+.action-image {
+    max-width: 150%; 
+    height: 200px;
+    align-items: last baseline;
+    border-radius: 40px; 
+    box-shadow: 0 10px 30px rgba(85, 6, 141, 0.1); 
+}
+#afif{
+    
+   
+    width: 60%;
+    height: 30%;
+    background-color: #6366f1;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+}
+#belal{
+    color: #e40312;
+   
+}
+
+
+.productive-users-section {
+    background-color: #f0f2f5; 
+    padding: 100px 20px;
+}
+
+.stats-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f5f4fa; 
+    border-radius: 20px; 
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.stats-title {
+    color: #100f0f;
+    font-size: 32px;
+    margin-bottom: 50px; 
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.stat-item {
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 56px;
+    font-weight: 700;
+    color: #6a5acd; 
+    margin: 0;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #888; 
+    margin-top: 8px;
+}
+
+
+.contact-section {
+    background-color: #f0f2f5; 
+    padding: 100px 0;
+}
+
+
+.contact-section .container {
+    display: flex;
+    align-items: center;
+    gap: 60px; 
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-text {
+    flex-basis: 40%; 
+}
+
+.contact-form {
+    flex-basis: 60%; 
+}
+
+.contact-text h2 {
+    font-size: 80px;
+    color: #111;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #5d5aef; 
+    box-shadow: 0 0 5px rgba(93, 90, 239, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #5d5aef; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #4a47d1; 
+}
+
+.site-footer {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center; 
+}
+
+.footer-logo {
+    color: #6a5acd; 
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-subtitle {
+    max-width: 550px; 
+    margin: 0 auto 30px auto; 
+    color: #888;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 15px; 
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #6a5acd;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="header-banner">
+    
+    <div class="navbar">
+      <div >
+        <img src="logo.png" alt="logo"  class="logo-img">
+        
+        <p class="player">
+            CYBER GAURD
+        </p>
+       
+
+      </div>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+      <h1>cyber security safety<br>insure secure your data</h1>
+      <button class="focus-btn">cyber security</button>
+    </div>
+  </div>
+
+  <div>
+    <section class="action-section">
+    <div class="container">
+        <div class="action-text">
+            <h2>we serve best security tools</h2>
+            <p>Explore our new security services</p>
+            
+                <button id="afif">
+                    <a id="belal"   href="https://gemini.google.com/app?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all">click here to explore</a>
+                </button>
+            
+            
+        </div>
+        <div class="action-image">  
+            <img src="images.jpg" alt="comming soon">
+        </div>
+    </div></section>
+
+    <section class="productive-users-section">
+    <div class="stats-card">
+        <h2 class="stats-title">we served Thousands of Productive Users security</h2>
+        <div class="stats-container">
+            <div class="stat-item">
+                <p class="stat-number">70K</p>
+                <p class="stat-label">Active Users</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">5M+</p>
+                <p class="stat-label">Focus Sessions</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">95%</p>
+                <p class="stat-label">Satisfaction Rate</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-text">
+            <h2>Let's Get in Touch</h2>
+        </div>
+
+        <div class="contact-form">
+            <form action="#">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="full name">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="write your message..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Get in Touch</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div id="rakayet">
+            <img src="logo.png" width="200px" height="200px" alt="">
+        </div>
+        <p class="footer-subtitle">
+            Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring your vision to life.
+        </p>
+        <nav class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">How it works</a>
+            <a href="#">Services</a>
+        </nav>
+    </div>
+</footer>
+
+  </head>
+
+</body>
+</html>
